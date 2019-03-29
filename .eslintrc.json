@@ -1,0 +1,33 @@
+{
+    "env": {
+        "node": true,
+        "es6": true
+    },
+    "extends": "eslint:recommended",
+    "rules": {
+        
+        "no-console": "off"
+    },
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module"
+    },
+    "globals": {
+        "fixture": true,
+        "expect": true,
+        "window": true,
+        "document": true,
+        "$":true,
+		"google": true,
+		"history": true,
+		"utag" : true,
+        "utag_data" : true,
+        "grecaptcha": true,
+        "Plyr": true,
+        "ShareThis": true,
+        "ShareThisViaFacebook": true,
+        "ShareThisViaTwitter": true,
+        "ShareThisViaLinkedIn": true
+
+    }
+}

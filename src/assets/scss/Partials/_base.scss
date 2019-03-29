@@ -1,0 +1,33 @@
+/* -- Base Styles  ---------- */
+
+body {
+  margin: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 26px;
+  color: $body-txt;
+  text-align: left;
+  font-style: normal;
+  background-color: $body-bg;
+}
+
+a {
+  color: $primary-link;
+
+}
+
+a.underline {
+  text-decoration: underline;
+}
+
+.hide {
+  display: none;
+}
+
+.navbar-brand img {
+  width: 32px;
+}
+
+footer {
+  color: $white;
+}

@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <meta name="description" content="Job Search Portal">
+    <meta name="author" content="Prasath Mani">
+
+    <title>Byju | Job Search Portal</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="header">
+        <div class="container-fuild">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                <a class="navbar-brand" href="#/">
+                    <h3> <img src="assets/img/logo.svg" alt="Job Search Portal"> Job Search Portal</h3>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-sm btn-outline-primary btn-login" href="#" role="button"
+                               aria-label="Log In">Log In</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<main role="main">
+
+    <section class="main-wrapper">
+        <!--Search Component-->
+        <div class="container">
+            <div class="search-component mt-4">
+                <div class="row">
+                    <div class="col-xs-12 col-md-12">
+                        <form method="get" name="job-search-form" id="job-search-form">
+
+                            <div class="input-group mb-3">
+
+                                <select class="custom-select" name="experience" id="js-experience" aria-label="select experience">
+                                    <option selected> - Experience -</option>
+                                </select>
+
+                                <select class="custom-select" name="location" id="js-location" aria-label="Select location">
+                                    <option selected> - Location -</option>
+                                </select>
+
+                                <input type="text" name="search" id="js-search" class="form-control" placeholder="Search by keywords or skills" aria-label="Search by keywords or skills">
+
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary" type="submit" aria-label="search">Search
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- job card -->
+        <div class="container">
+            <div class="job-card">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="job-card__filter form-inline mt-3 mb-3">
+                            <div class="col-6 text-left">
+                                <div class="js-total-result">Total Jobs : <span id="js-total-result"></span></div>
+                            </div>
+                            <div class="col-6">
+                                <div class="float-right">
+                                    <button class="form-control form-control-sm" name="js-location--filter" id="js-location--filter" data-type="location" aria-label="Sort By Location">
+                                        Sort By Location
+                                    </button>
+
+                                    <button class="form-control form-control-sm" name="js-sort-by" id="js-sort-by" data-type="experience" aria-label="Sort By experience">
+                                        Sort By Exp
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- cards -->
+                        <div class="job-card__results row">
+
+                            <div class="col-xs-12 col-md-6">
+                                <p>Loading...</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    <div class="container-fluid footer-component bg-dark mt-5">
+        <div class="container">
+            <div class="row">
+                <p class="col-12 text-right">Job Search Portal © 2019</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Script -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="assets/js/scripts.min.js"></script>
+</body>
+</html>
