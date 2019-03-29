@@ -226,11 +226,11 @@ class JobSearchApp {
 
         if (result.length && serachTerm) {
             result = self.findItem(result, serachTerm);
-        } else if (result.length === 0) {
+        } else if (result.length === 0 && serachTerm) {
             result = self.findItem(appStore, serachTerm);
         }
 
-        this.searchReult = result;
+        // this.searchReult = result;
         self.renderJobSearchResult(result);
     }
 
