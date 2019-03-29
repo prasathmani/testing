@@ -230,7 +230,7 @@ class JobSearchApp {
             result = self.findItem(appStore, serachTerm);
         }
 
-        // this.searchReult = result;
+        this.searchReult = result;
         self.renderJobSearchResult(result);
     }
 
